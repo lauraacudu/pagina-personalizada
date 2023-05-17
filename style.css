@@ -1,0 +1,1214 @@
+/* Estilos generales */
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+
+    
+  }
+
+  html{
+    scroll-behavior: smooth;
+  }
+  
+  body{
+    font-family: cinzel;
+    width: 100vw;
+    background-color: #10081D;
+  }
+  
+
+  /*header*/
+
+.header__container{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  background-color: #1b1919;
+  box-shadow: #E06D9B;
+  text-align: center;
+  z-index: 2;
+  font-family: cinzel;
+  
+  }
+
+  .header__container ul{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    line-height: 50px;
+    list-style: none;
+  
+  }
+
+  .header__container ul li a{
+    text-decoration: none ;
+    color: rgb(255, 255, 255);
+    font-size: 31px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all 0.5s;
+ 
+  }
+  
+  .header__container ul li a:hover{
+    color: #E06D9B;
+    font-size: 29px;
+ 
+  }
+
+  /*banner*/
+.banner{
+  display: grid;
+  height: 100vh;
+  place-items: center;
+  text-align: center;
+  background-image: url(../img/1.jpg);
+  background-color: rgb(0, 0, 0);
+  background-size: cover;
+  background-position: center center ;
+  position: relative;
+}
+
+.banner__text{
+  z-index: 1;
+}
+
+.banner:before{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.banner__text h1{
+  font-family: 'cinzel';
+  color: rgb(255, 255, 255);
+  font-size: 55px;
+}
+
+.banner__text p{
+  font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: rgb(142, 141, 141);
+  font-weight: 900;
+  font-size: 35px;
+  margin-top: 50px;    
+}
+
+.banner__text a{
+  text-decoration: none;
+  font-family: 'cinzel';
+  color: rgb(255, 255, 255);
+  font-size: 35px;
+  text-transform: uppercase;
+  background-color:  #E06D9B;
+  padding: 20px 35px;
+  display: inline-block;
+  margin-top: 50px;   
+  border-radius: 24px;
+  border: 2px solid   #E06D9B;
+  transition: all 0.5s; 
+}
+
+.banner__text a:hover{
+  background-color:  #f15794;
+}
+
+
+/*about*/
+
+.about{ 
+  padding: 40px ;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.about-header{
+  margin-bottom: 40px;
+}
+
+.about-header h2{
+  font-size: 48px;
+  font-family: cinzel;
+  text-align: center;
+  text-transform: uppercase;
+  color: #E06D9B;
+}
+
+.about-header p{
+  font-size: 35px;
+  width:95%;/**/
+  margin: auto;
+  text-align: center;
+  font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: whitesmoke;
+
+}
+
+
+/*service*/
+.service{
+  padding: 40px ;
+}
+
+.service-header h2{
+  font-size: 48px;
+  padding-top: 40px;
+  font-family: cinzel;
+  color: #E06D9B;
+
+}
+
+.service-header p{
+
+  font-size: 35px;
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: whitesmoke;
+
+}
+
+
+/*slider*/
+
+.slider-frame{
+  width: 70%;
+  height: auto;
+  margin: 50px auto 0;
+  overflow: hidden;
+}
+
+.slider-frame ul{
+  display: flex;
+  padding: 0;
+  width: 400%;
+
+  animation: slide 16s infinite alternate ease-in-out;
+}
+
+.slider-frame li{
+  list-style: none;
+  width: 100%;
+}
+
+.slider-frame img{
+  width: 100%
+}
+
+@keyframes slide{
+  0%{margin-left: 0%;;}
+  20%{margin-left: 0%;;}
+  
+  25%{margin-left: -100%;;}
+  45%{margin-left: -100%;;}
+
+  50%{margin-left: -200%;;}
+  70%{margin-left: -200%;;}
+
+  75%{margin-left: -300%;;}
+  95%{margin-left: -300%;;}
+}
+
+
+
+/*artist*/
+.artist{
+  padding: 40px 0;
+}
+
+.artist-header h2{
+  font-size: 48px;
+  padding-top: 40px;
+  color: #E06D9B;
+
+}
+
+.artist-header p {
+  font-size: 35px;
+  padding-top: 40px;
+  font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: whitesmoke;
+}
+
+.artist-content {
+  display: flex;
+}
+
+.artist-content img{
+  width: 100%;
+  padding: 10%;
+  height: auto;
+}
+
+.artist-content h2{
+  text-transform: uppercase;
+  text-align: center;
+  font-family: cinzel;
+  font-size: 48px;
+  color: #E06D9B;
+
+
+}
+
+.artist-content p{
+  font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center; 
+  font-size: 35 px;
+  padding: 10%;
+  color: whitesmoke;
+}
+
+
+
+
+/*service*/
+
+.service{
+  padding: 40px;
+}
+
+.service-header{
+  margin-bottom: 40px;
+}
+
+.service-header h2{
+  font-size: 48px;
+  padding-top: 40px;
+}
+
+.service-header p{
+  font-size: 35px;
+  width:95%;/**/
+  padding-top: 40px;
+  font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: whitesmoke;
+}
+
+.service-content{
+  display: flex;
+}
+
+.service-content img{
+  width: 50%;
+  padding: 10%;
+  height: 200px;
+}
+
+.service-content h3{
+  text-transform: uppercase;
+  margin: 48px;
+  text-align: center;
+  font-family: cinzel;
+  font-size: 35px;
+  color: #E06D9B;
+
+}
+
+
+.service-content p{
+  line-height: 1.5;
+  margin: 10px;
+  font-size: 15px;
+  font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-transform: capitalize;
+  text-align: justify;
+  padding: 10%;
+  color: whitesmoke;
+  
+}
+
+.scrollable-list {
+  overflow-x: auto;
+  white-space: nowrap;
+  font-size: 25px;
+  margin-bottom: 10px;
+  color: whitesmoke;
+}
+
+
+.scrollable-list img{
+  width: 50%;
+  height: auto ;
+  margin: 5px;
+  object-fit: cover;
+}
+
+.scrollable-list ul {
+  list-style: inside;
+  padding: 0;
+  margin: 0;
+}
+
+.scrollable-list li {
+  display: inline-block;
+  padding: 10px;
+  background-color: #E06D9B;
+  margin-right: 10px;
+}
+
+  
+  .contact{
+    padding: 40px ;
+    font-size: 48px;
+
+  }
+
+  .contact h2{
+    font-size: 48px;
+    padding-top: 40px;
+    font-family: cinzel;
+    color: #E06D9B;
+
+  
+  }
+  
+  .contact p{
+  
+    font-size: 30px;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: whitesmoke;
+  
+  }
+
+  .single-contact{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+
+  .single-contact input{
+    width: 88%;
+    height: 50px;
+    margin: 10px;
+    border: none;
+    border-bottom: 3px solid #E06D9B;
+    font-size: 20px;
+
+  }
+  
+  .single-contact textarea{
+    width: 88%;
+    height: 120px;
+    border: none;
+    border-bottom: 3px solid#E06D9B;
+    font-size: 20px;
+
+  }
+  
+  .single-contact input:last-child{
+    border: none;
+    width: 30%;
+    border-radius: 10px;
+    background-color: #E06D9B;
+    color:    #E06D9B;
+    
+  }
+  
+  .single-contact input:last-child:hover{
+    background-color: rgb(245, 179, 179);
+  }
+  
+
+  form input,
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  form button {
+    display: inline-block;
+    background-color: #E06D9B;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    padding: 20px ;
+    font-size: 20px;
+
+  }
+  
+  form button:hover {
+    background-color: #e34785;
+  }
+  
+  /* Estilos del footer */
+  footer {
+    background-color:  #E06D9B;
+    color: #fff;
+    line-height: 2;
+    text-align: center;
+    font-family: cinzel;
+  }
+  
+
+
+
+  /*Haciendo la página Responsive*/
+
+@media screen and (max-width: 1700px){
+
+  .header__container{
+      background-position: 50%;
+      position: fixed;
+  }
+
+}
+
+@media screen and (max-width:1200px){
+
+  .header__container{
+      padding: 3px;
+      justify-content: center;
+
+  }
+
+  .header__container ul{
+      background-position: -100px;
+      justify-content: center;
+
+  }
+
+  .header__container ul li a{
+      background-position: -100px;
+      justify-content: center;
+
+  }
+
+
+
+
+  .about-header{
+    padding: 40px ;
+    margin-bottom: 1px;
+  }
+  .about-header h2{
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .about-header p{
+    padding: 40px;
+
+    font-size: 30px;
+    text-align: center;
+
+}
+
+
+.artist{
+  padding: 40px;
+}
+
+.artist-header h2{
+  font-size: 40px;
+  padding-top: 40px;
+}
+
+
+.artist-header p {
+  font-size: 30px;
+  padding-top: 10px;
+  text-align: center;
+
+}
+
+.artist-content h2{
+  text-align: center;
+  font-size: 40px;
+
+}
+
+.artist-content p{
+  text-align: center; 
+  font-size: 30px;
+  padding: 10%;
+}
+
+
+  .container__cover .svg img{
+      width: 500px;
+  }
+
+ 
+
+  .service{
+    padding: 10px ;
+  }
+  .service-header h2{
+    font-size: 40px;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .service-header p{
+    padding: 40px;
+    font-size: 30px;
+    text-align: center; 
+  }
+
+  .service-content{
+    display: flex;
+  }
+
+  
+  .service-content h3{
+    margin: 50px;
+    text-align: center;
+    font-size: 20px;
+  }
+  
+  
+  .service-content p{
+    line-height: 1.5;
+    margin: 10px;
+    font-size: 10px;
+    text-align: justify;
+    padding: 10%;
+    
+  }
+
+  .scrollable-list {
+    overflow-x: auto;
+    white-space: nowrap;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  
+  .scrollable-list img{
+    width: 50%;
+    height: auto ;
+    margin: 1px;
+    object-fit: cover;
+  }
+  
+  .scrollable-list ul {
+    list-style: inside;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .scrollable-list li {
+    display: inline-block;
+    padding: 5px;
+    background-color: #10081D;
+    
+  }
+
+
+  .contact{
+    padding: 40px ;
+    font-size: 50px;
+
+  }
+
+  .contact h2{
+    font-size: 40px;
+    padding-top: 40px;
+  }
+  
+  .contact p{
+    font-size: 30px;
+    width: 50%;
+    margin: auto;
+    text-align: center;  
+  }
+  
+
+}
+
+
+
+
+
+@media screen and (max-width: 1020px){
+
+  .header__container{
+      padding: 3px;
+      justify-content: center;
+
+  }
+
+  .header__container ul{
+      background-position: -100px;
+      justify-content: center;
+
+  }
+
+  .header__container ul li a{
+      background-position: -100px;
+      justify-content: center;
+      font-size: 25px;
+
+
+
+  }
+
+/*texto banner*/
+.banner__text h1{
+  font-size: 40px;
+}
+
+.banner__text p{
+  font-weight: 900;
+  font-size: 30px;
+  margin-top: 50px;    
+}
+
+.banner__text a{
+  font-size: 30px;
+  text-transform: uppercase;
+  padding: 20px 35px;
+  margin-top: 50px;   
+  border-radius: 24px;
+}
+
+
+
+
+
+  .about-header{
+    padding: 40px ;
+    margin-bottom: 1px;
+  }
+  .about-header h2{
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .about-header p{
+    padding: 40px;
+    font-size: 30px;
+    text-align: center;
+
+}
+
+
+.artist{
+  padding: 40px;
+}
+
+.artist-header h2{
+  font-size: 40px;
+  padding-top: 40px;
+}
+
+
+.artist-header p {
+  font-size: 30px;
+  padding-top: 10px;
+  text-align: center;
+
+}
+
+.artist-content h2{
+  text-align: center;
+  font-size: 40px;
+
+}
+
+.artist-content p{
+  text-align: center; 
+  font-size: 30px;
+  padding: 10%;
+}
+
+
+  .container__cover .svg img{
+      width: 500px;
+  }
+
+ 
+
+  .service{
+    padding: 10px ;
+  }
+  .service-header h2{
+    font-size: 40px;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .service-header p{
+    padding: 40px;
+    font-size: 30px;
+    text-align: center; 
+  }
+
+  .service-content{
+    display: flex;
+  }
+
+  
+  .service-content h3{
+    margin: 50px;
+    text-align: center;
+    font-size: 20px;
+  }
+  
+  
+  .service-content p{
+    line-height: 1.5;
+    margin: 10px;
+    font-size: 10px;
+    text-align: justify;
+    padding: 10%;
+    
+  }
+
+  .scrollable-list {
+    overflow-x: auto;
+    white-space: nowrap;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  
+  .scrollable-list img{
+    width: 50%;
+    height: auto ;
+    margin: 1px;
+    object-fit: cover;
+  }
+  
+  .scrollable-list ul {
+    list-style: inside;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .scrollable-list li {
+    display: inline-block;
+    padding: 5px;
+    background-color: #10081D;
+    
+  }
+
+
+  .contact{
+    padding: 40px ;
+    font-size: 50px;
+
+  }
+
+  .contact h2{
+    font-size: 40px;
+    padding-top: 40px;
+  }
+  
+  .contact p{
+    font-size: 30px;
+    width: 50%;
+    margin: auto;
+    text-align: center;  
+  }
+  
+
+}
+
+
+
+
+
+
+@media screen and (max-width: 720px){
+
+  .header__container{
+      padding: 3px;
+      justify-content: center;
+
+  }
+
+  .header__container ul{
+      background-position: -100px;
+      justify-content: center;
+
+  }
+
+  .header__container ul li a{
+      background-position: -100px;
+      justify-content: center;
+      font-size: 15px;
+
+
+
+  }
+
+/*texto banner*/
+.banner__text h1{
+  font-size: 30px;
+}
+
+.banner__text p{
+  font-weight: 900;
+  font-size: 20px;
+  margin-top: 50px;    
+}
+
+.banner__text a{
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 20px 35px;
+  margin-top: 50px;   
+  border-radius: 24px;
+}
+
+
+
+
+
+  .about-header{
+    padding: 40px ;
+    margin-bottom: 1px;
+  }
+  .about-header h2{
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .about-header p{
+    padding: 40px;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+
+.artist{
+  padding: 40px;
+}
+
+.artist-header h2{
+  font-size: 30px;
+  padding-top: 40px;
+}
+
+
+.artist-header p {
+  font-size: 20px;
+  padding-top: 10px;
+  text-align: center;
+
+}
+
+.artist-content h2{
+  text-align: center;
+  font-size: 30px;
+
+}
+
+.artist-content p{
+  text-align: center; 
+  font-size: 20px;
+  padding: 10%;
+}
+
+
+  .container__cover .svg img{
+      width: 500px;
+  }
+
+ 
+
+  .service{
+    padding: 50px ;
+  }
+  .service-header h2{
+    font-size: 30px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .service-header p{
+    padding: 40px;
+    font-size: 20px;
+    text-align: center; 
+  }
+
+  .service-content{
+    display: flex;
+  }
+
+  
+  .service-content h3{
+    margin: 40px;
+    text-align: center;
+    font-size: 20px;
+  }
+  
+  
+  .service-content p{
+    line-height: 1.5;
+    margin: 10px;
+    font-size: 10px;
+    text-align: justify;
+    padding: 10%;
+    
+  }
+
+  .scrollable-list {
+    overflow-x: auto;
+    white-space: nowrap;
+    font-size: 20px;
+  }
+  
+  
+  .scrollable-list img{
+    width: 50%;
+    height: auto ;
+    margin: 1px;
+    object-fit: cover;
+  }
+  
+  .scrollable-list ul {
+    list-style: inside;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .scrollable-list li {
+    display: inline-block;
+    padding: 5px;
+    background-color: #10081D;
+    
+  }
+
+
+  .contact{
+    padding: 40px ;
+    font-size: 30px;
+
+  }
+
+  .contact h2{
+    font-size: 20px;
+    padding-top: 40px;
+  }
+  
+  .contact p{
+    font-size: 20px;
+    width: 50%;
+    margin: auto;
+    text-align: center;  
+  }
+  
+
+}
+
+@media screen and (max-width: 480px){
+
+  .header__container{
+      padding: 3px;
+      justify-content: center;
+
+  }
+
+  .header__container ul{
+      background-position: -100px;
+      justify-content: center;
+
+  }
+
+  .header__container ul li a{
+      background-position: -100px;
+      justify-content: center;
+      font-size: 11px;
+  }
+
+
+  .header__container ul li a:hover{
+    font-size: 13px;
+ 
+  }
+
+/*texto banner*/
+.banner__text h1{
+  font-size: 30px;
+}
+
+.banner__text p{
+  font-weight: 900;
+  font-size: 20px;
+  margin-top: 50px;    
+}
+
+.banner__text a{
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 20px 35px;
+  margin-top: 50px;   
+  border-radius: 24px;
+}
+
+
+
+
+
+  .about-header{
+    padding: 40px ;
+  }
+  .about-header h2{
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .about-header p{
+    padding: 40px;
+    font-size: 15px;
+    text-align: center;
+
+ .slider-frame{
+      width: 100%;
+      height: auto;
+      margin: 100px;
+      overflow: hidden;
+    }
+    
+    .slider-frame img{
+      width: 100%; 
+      padding: 10%;
+      height: auto;
+    }
+}
+
+
+.artist{
+  padding: 40px;
+}
+
+.artist-header h2{
+  font-size: 25px;
+  padding-top: 40px;
+}
+
+
+.artist-header p {
+  font-size: 15px;
+  padding-top: 10px;
+  text-align: center;
+
+}
+
+.artist-content h2{
+  text-align: center;
+  font-size: 25px;
+
+}
+
+.artist-content p{
+  text-align: center; 
+  font-size: 15px;
+  padding: 10%;
+}
+
+
+  .container__cover .svg img{
+      width: 500px;
+  }
+
+ 
+
+  .service{
+    padding: 50px ;
+  }
+  .service-header h2{
+    font-size: 25px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .service-header p{
+    padding: 40px;
+    font-size: 15px;
+    text-align: center; 
+  }
+
+  .service-content{
+    display: flex;
+  }
+
+  
+  .service-content h3{
+    margin: 40px;
+    text-align: center;
+    font-size: 15px;
+  }
+  
+  
+  .service-content p{
+    line-height: 1.5;
+    margin: 10px;
+    font-size: 10px;
+    text-align: justify;
+    padding: 10%;
+    
+  }
+
+  .scrollable-list {
+    overflow-x: auto;
+    white-space: nowrap;
+    font-size: 25px;
+  }
+  
+  
+  .scrollable-list img{
+    width: 50%;
+    height: auto ;
+    margin: 1px;
+    object-fit: cover;
+  }
+  
+  .scrollable-list ul {
+    list-style: inside;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .scrollable-list li {
+    display: inline-block;
+    padding: 5px;
+    background-color: #10081D;
+    
+  }
+
+
+  .contact{
+    padding: 40px ;
+    font-size: 25px;
+
+  }
+
+  .contact h2{
+    font-size: 15px;
+    padding-top: 40px;
+  }
+  
+  .contact p{
+    font-size: 15px;
+    width: 50%;
+    margin: auto;
+    text-align: center;  
+  }
+  
+
+}
